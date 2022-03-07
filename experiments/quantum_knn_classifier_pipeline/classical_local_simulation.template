@@ -1,0 +1,17 @@
+{
+  "dataset": "${dataset}",
+  "class_mapping": "${class_mapping}",
+  "attribute_normalization": true,
+  "k-folds": ${k_folds},
+  "k-fold_random_state": ${k_fold_seed},
+  "res_dir": "${res_dir}",
+  "knn": {
+    "k": ${k_nn},
+    "exec_type": "classical"
+  },
+  "classifier": {
+    "exec_type": "local_simulation",
+    "shots": 1024
+  },
+  "num_processes": ${num_processes}
+}

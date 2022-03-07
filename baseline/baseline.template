@@ -1,0 +1,26 @@
+{
+    "dataset": "${dataset}",
+    "class_mapping": "${class_mapping}",
+    "k-folds": ${k_folds},
+    "k-fold_random_state": ${k_fold_seed},
+    "res_dir": "${res_dir}",
+    "methods": {
+        "random_forest": {},
+        "svm": {
+            "kernels": ["linear", "rbf"]
+        },
+        "knn": {
+            "k": ${k_nn},
+            "metrics": ["cosine", "euclidean"]
+        },
+        "knn+classifier": {
+            "k": ${k_nn},
+            "knn_metrics": ["cosine", "euclidean"]
+        },
+        "knn+svm": {
+            "k": ${k_nn},
+            "knn_metrics": ["cosine", "euclidean"],
+            "svm_kernels": ["linear", "rbf"]
+        }
+    }
+}

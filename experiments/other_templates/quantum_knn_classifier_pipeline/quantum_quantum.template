@@ -1,0 +1,24 @@
+{
+  "dataset": "${dataset}",
+  "class_mapping": "${class_mapping}",
+  "attribute_normalization": true,
+  "k-folds": ${k_folds},
+  "k-fold_random_state": ${k_fold_seed},
+  "res_dir": "${res_dir}",
+  "knn": {
+    "k": ${k_nn},
+    "exec_type": "quantum",
+    "backend_name": "ibmq_manila",
+    "job_name": "pipeline_qknn",
+    "shots": 1024,
+    "automatic_online_wait": true
+  },
+  "classifier": {
+    "exec_type": "quantum",
+    "backend_name": "ibmq_manila",
+    "job_name": "pipeline_qbc",
+    "shots": 1024,
+    "automatic_online_wait": true
+  },
+  "num_processes": ${num_processes}
+}

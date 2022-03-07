@@ -1,0 +1,16 @@
+{
+  "dataset": "${dataset}",
+  "class_mapping": "${class_mapping}",
+  "attribute_normalization": true,
+  "k-folds": ${k_folds},
+  "k-fold_random_state": ${k_fold_seed},
+  "res_dir": "${res_dir}",
+  "knn": {
+    "k": ${k_nn},
+    "exec_type": "statevector"
+  },
+  "classifier": {
+    "exec_type": "classical"
+  },
+  "num_processes": ${num_processes}
+}
