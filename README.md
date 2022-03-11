@@ -1,5 +1,5 @@
-# Implementation and Empirical Evaluation of a Quantum Machine Learning Pipeline
-This repository provides the code for the "Implementation and Empirical Evaluation of a Quantum Machine Learning Pipeline" article, which has been recently submitted to the _Journal of Machine Learning Research_ journal.
+# Implementation and Empirical Evaluation of a Quantum Machine Learning Pipeline for Local Classification
+This repository provides the code for the "Implementation and Empirical Evaluation of a Quantum Machine Learning Pipeline for Local Classification" article, which has been recently submitted to the _Journal of Machine Learning Research_ journal.
 
 ## 1. Prerequisites
 In order to run the code, you need to have Python 3 installed. In particular, Python 3.8.10 has been used for the experiments presented in the paper. If you do not have Python 3 on your machine, we suggest to install Anaconda Python.
@@ -61,7 +61,7 @@ Concerning the baseline methods, the procedure is the same (notice that all the 
 python baseline/baseline_methods.py CONFIG-FILE-PATH
 ```
 \
-**Note #2:** all the preprocessed datasets ready for experiments are located inside the `datasets_exp` folder, whereas the `datasets_orig` folder contains their original versions (the wrong instances in the Iris dataset have been corrected in both places). The preprocessing has been performed using the `preprocess_dataset.py` script located inside the `pre_post_processing` directory.
+**Note #2:** all the preprocessed datasets ready for the experiments are located inside the `datasets_exp` folder, whereas the `datasets_orig` folder contains their original versions (the wrong instances in the Iris dataset have been corrected in both places). As described in the paper, all datasets have been taken from the UCI Machine Learning Repository. The preprocessing has been performed using the `preprocess_dataset.py` script located inside the `pre_post_processing` directory.
 
 ## 4. Results Postprocessing
 At the end of the execution, before plotting anything, it is necessary to collect the results from the various experiments folders in order to make them more tractable. To this end, the `collect_multi_exp_results.py` script (located inside the `pre_post_processing` folder) is provided. For instance, to collect all quantum-pipeline-related results for the "15 qubits" datasets with k=5, the command is the following:
