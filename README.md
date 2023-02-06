@@ -1,5 +1,5 @@
-# Implementation and Empirical Evaluation of a Quantum Machine Learning Pipeline for Local Classification
-This repository provides the code for the "Implementation and Empirical Evaluation of a Quantum Machine Learning Pipeline for Local Classification" article, which has been recently submitted to the _Journal of Machine Learning Research_ journal.
+# Implementation and empirical evaluation of a quantum machine learning pipeline for local classification
+This repository provides the code for the "Implementation and empirical evaluation of a quantum machine learning pipeline for local classification" article.
 
 ## 1. Prerequisites
 In order to run the code, you need to have Python 3 installed. In particular, Python 3.8.10 has been used for the experiments presented in the paper. If you do not have Python 3 on your machine, we suggest to install Anaconda Python.
